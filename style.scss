@@ -105,8 +105,8 @@ main {
         position: relative;
 	}
 	#mobile-image {
-		height: 30vh;
-		width: 100%;
+		height: 40%;
+		max-width: 100%;
 		border-radius: $border-radius $border-radius 0 0;
 		background-image: url("./images/image-header-mobile.jpg");
         background-color: $accent;
@@ -119,8 +119,8 @@ main {
             content: '';
             background-color: $accent;
             opacity: 60%;
-            width: inherit;
-            height: inherit;
+            width: 100%;
+            height: 100%;
             display: block;
             border-radius: inherit;
         }
@@ -129,7 +129,7 @@ main {
 @media (max-width: 728px) {
 	html,
 	body {
-		min-height: 600px;
+		min-height: 800px;
 		min-width: 400px;
 	}
 	main,
@@ -140,6 +140,7 @@ main {
 		flex-direction: column;
 		height: 90%;
 		max-height: none;
+        min-height: 600px;
 		min-width: 300px;
         max-width: 350px;
 		text-align: center;
